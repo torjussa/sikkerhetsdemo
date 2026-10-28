@@ -114,9 +114,9 @@
   <main class="wrap" id="login">
     <img class="logo" src="bredvid-logo.svg?v=2" alt="Bredvid" />
     <h1>Logg på</h1>
-    <form id="form" autocomplete="off" novocomplete>
+    <form id="form" autocomplete="on">
       <div class="field">
-        <input id="email" type="email" inputmode="email" placeholder="ditt.navn@bredvid.no" aria-label="E-post" />
+        <input id="email" name="email" type="email" inputmode="email" autocomplete="email" autocapitalize="off" spellcheck="false" autofocus placeholder="ditt.navn@bredvid.no" aria-label="E-post" />
       </div>
       <div class="err" id="err">Vi finner ikke kontoen. Skriv inn en gyldig e-postadresse.</div>
       <a class="link" href="#" onclick="return false">Får du ikke tilgang til kontoen?</a>
